@@ -14,6 +14,31 @@ function Calc() {
         })
     }
 
+    const descripEmptyOrNot = () => {
+        console.log("In Here")
+        if (desp == '') {
+            console.log("In here now")
+            return ''
+        } else if(desp == 'helper') {
+            return "You've entered an invalid Pokemon"
+        } else {
+            let finalString = ''
+            for(let i = 0; i < desp.length; ++i) {
+                finalString += desp[i] + " "
+                console.log("In here yolo")
+            }
+            return finalString
+        }
+    }
+
+    const pokeEmptyOrNot = () => {
+        if (pokemon == '') {
+            return ''
+        } else {
+            return "The Pokemon you entered is: "
+        }
+    }
+
     const sleep = (milliseconds) => {
         return new Promise(resolve => setTimeout(resolve, milliseconds))
     }
@@ -23,6 +48,9 @@ function Calc() {
         some()
         sleep(5000)
         setKeys(Object.keys(desp))
+        if (desp == '') {
+            setDesp(['helper'])
+        }
         console.log(desp)
         console.log(keys)
     }
@@ -36,19 +64,13 @@ function Calc() {
                 <label htmlFor='PokeName'>Enter your Pokemon here:  
                     <input type='text' onChange={(e) => {
                         setPokemon(e.target.value)
+                        setDesp('')
                     }} />
                 </label>
                 <input type='submit' value='Enter' />
             </form>
-            <p>{pokemon}</p>
-            <p>{desp['0'] + " wut " + desp['1'] + "Hello"}</p>
-            <table>
-                {keys.map((pokemonN) => {
-                    <Poke
-                    pokemonName={pokemonN} />
-                    console.log("Out HeRe?" + pokemon + desp + pokemonN)
-                })}
-            </table>
+            <p>{pokeEmptyOrNot()} {pokemon}</p>
+            <p>{descripEmptyOrNot()}</p>
         </div>
     )
 }
