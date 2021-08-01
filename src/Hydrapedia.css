@@ -1,0 +1,19 @@
+#PokemonEnter {
+  background-color: darkblue;
+  border: none;
+  color: lightblue;
+  padding: 4px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#Check {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+.PlaceHolder {
+    color: #000;
+    line-height: 10px;
+}
