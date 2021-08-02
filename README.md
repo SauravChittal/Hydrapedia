@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Hydrapedia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This goes hand-in-hand with [Pokemon API](https://github.com/SauravChittal/Pokemon-API). If you haven't, make sure to change the port present in the project from 3000 to any other number.
 
-## Available Scripts
+Before starting, be sure to download [axios](https://www.npmjs.com/package/axios) using whichever method works. 
 
-In the project directory, you can run:
+After, you've setup Pokemon API and got it running, start Hydrapedia using `npm start` or `yarn start`.
 
-### `npm start`
+### Starting the page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After running `npm start`, you should be greeted with a screen similar to this (it can take a long time for the page to load): ![image](https://user-images.githubusercontent.com/73107662/127932856-09965c32-6539-4116-824b-8e4c165d02f1.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Entering in the information
 
-### `npm test`
+Entering in the pokemon name is fairly straight-forward. You type your desired pokemon name(please be sure to use title case) within the text box like that: ![image](https://user-images.githubusercontent.com/73107662/127932789-0cc751ad-137a-4380-834e-ca423dd582ba.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Retriving information
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+When you submit the name of the pokemon, the page reloads to give information about the said pokemon as such(Do note that "Type: " is a string which has been added manually): ![image](https://user-images.githubusercontent.com/73107662/127933153-f3550227-4ec2-4d2b-b7bd-2040403160f8.png)
